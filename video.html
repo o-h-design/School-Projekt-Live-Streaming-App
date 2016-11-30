@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+	<link rel="stylesheet" type="text/css" href="CSS/css/bootstrap.css"/>
+	<script src="JS/masonry.pkgd.js"></script>
+	<script src="JS/jquery-3.1.1.js"></script>
+	<script src="JS/UI/jquery-ui.js"></script>
+	<script src="CSS/JS/bootstrap.js"></script>
+	<script type="text/javascript">
+
+	/*
+
+	$( document ).ready(function() {
+    	console.log( "ready!" );
+    	$(".grid-item").each(function() {
+ 			$(this).delay(Math.random()*800);
+		});
+	});
+
+	.show( "drop", {direction: "down"}, 800 )
+
+.delay(Math.random()*800)
+
+$("html, body").animate({ scrollTop: $(".leftScroll").height() });
+data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 500 }'
+data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 500 }'
+
+$(".leftScroll")height();
+
+	*/
+
+	$( document ).ready(function() {
+
+
+
+	$(".leftScroll div ").hide();
+	$(".rightScroll div ").hide();
+
+	function fades(c) {
+            var x = c;
+            c.delay(900,c.show("drop", {direction: "down"}, 1000, function () {
+                if (c.is('last-child')) {
+
+                    c.fadeOut(10000, function() {
+                         fades(c);
+                         $(".leftScroll").delay( 8000 );
+
+                    });
+                }
+                else {
+                    fades(c.next());
+                    $("body").animate({ scrollTop: $(".scrollThing").height()}, 2000, function() {
+					    // Animation complete.
+					  });
+                }
+            }));
+	}
+
+	fades($('.rightScroll .grid-item:first'));
+	fades($('.leftScroll .grid-item:first'));
+
+	});
+
+	</script>
+</head>
+<body>
+
+<div class="header">
+	<nav class="container navbar-fixed-top headerTop">
+		<div class="col-lg-4"><img src="Pictures/Logo.png"></div>
+		<div class="col-lg-4"><h1>Blueskonzert in Berlin</h1></div>
+		<div class="col-lg-4">
+			<ul class="naviHead">
+				<li>Login</li>
+				<li>FAQ</li>
+				<li>Kontakt</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<div class="scrollWrapper Video" >
+</div>
+
+<footer class="navbar-fixed-bottom footerBot">
+
+	<div class="container">
+
+		<div class="PlayBox col-lg-12">
+			<div class="playButton col-lg-1">
+				<button>
+					<svg width="52px" height="82px" viewBox="40 16 52 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<desc></desc>
+						<defs></defs>
+						<polygon id="Triangle" stroke="none" fill="#FFFFFF" fill-rule="evenodd" transform="translate(65.974779, 57.122640) rotate(-270.000000) translate(-65.974779, -57.122640) " points="65.9747786 31.9125672 106.112124 82.3327127 25.8374328 82.3327127"></polygon>
+					</svg>
+				</button>
+			</div>
+
+			<div class="liveInfo col-lg-11">
+				<h2 class="streamTitle">Live Blueskonzert</h2>
+
+				<div class="moreInfoWrapper col-lg-3">
+					<div class="moreInfo">
+						<span>Live on Air</span> with radioneins
+					</div>
+					<div class="moreInfo">
+						<span>Moderation</span> Hans Muster
+					</div>
+				</div>
+				<div class="audioLine col-lg-9">
+					<img src="Pictures/Tonspur.png" alt="">
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+	<div class="switcher">
+		<a href="timeline.html">
+			<button>
+				Switch to <br><span>Social Timeline</span>
+			</button>
+		</a>
+	</div>
+	
+</footer>
+
+</body>
+</html>

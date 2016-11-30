@@ -1,0 +1,188 @@
+/* Fonts */
+
+body {
+    font-size: 100%;
+    font-family: Interstate;
+    line-height: 1.6;
+}
+
+body h1 {
+    font-size: 2em;
+    /* Blueskonzert in Berl: */
+    font-family: InterstateBoldCondensed;
+    font-size: 32px;
+    color: #FFFFFF;
+    letter-spacing: 1.29px;
+    margin-top: 2px;
+    text-align: center;
+    text-shadow: 0px 0px 6px black;
+    text-transform: uppercase;
+}
+
+h1:hover {
+    text-shadow: 0px 0px 12px black;
+    color: #dedede;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.naviHead li {
+    /* Login FAQ Kontakt: */
+    //font-family: Interstate;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: inline-block;
+    text-align: right;
+    padding: 5px 5px;
+    margin: 0 5px;
+    text-shadow: 0px 0px 6px black;
+}
+
+.naviHead li:hover {
+    color: #FF8300;
+    border-bottom: 2px solid #FF8300;
+}
+
+.naviHead {
+    float: right;
+}
+
+.headerTop {
+    padding: 20px 0px;
+}
+
+
+
+.footerBot {
+	/* Rectangle 12: */
+	background: #000000;
+	box-shadow: 0 0 17px 0 rgba(0,0,0,0.50);
+}
+
+body {
+    /* Rectangle 10: */
+    /*background-image: linear-gradient(-180deg, #4D4C4C 38%, #202020 100%);*/
+    background: darkgrey;
+    background-color: #2f2f2f!important;
+    background-image: url('../Pictures/timeline.png');
+    background-size: auto 100%;
+    background-position: top center;
+    background-repeat: repeat-y;
+}
+
+html, body {
+     height:100%;
+}
+
+.scrollThing {
+    padding-top: 80px;
+    display: block;
+    position: relative;
+    float: left;
+    padding-bottom: 120px;
+       height:auto !important; /* real browsers */
+    height:100%; /* IE6: treaded as min-height*/
+}
+
+.scrollWrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.Video {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.leftScroll, .rightScroll {
+    width: 500px;
+    min-height: ;
+    float: left;
+    position: relative;
+}
+
+.scrollThing img, .footerBot img, .headerTop img {
+    width:auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.grid-item {
+    width: 500px;
+    height: auto;
+}
+
+.left img.testPic {
+    width: auto;
+    float:right;
+    margin-right: -55px;
+}
+
+.right img.testPic {
+    width: auto;
+    float:left;
+   margin-left: -55px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* PlayBox */
+
+.PlayBox div {
+	color: #FFf;
+	text-shadow: 1px 2px 4px rgba(0,0,0,0.87);
+	float: left;
+}
+
+.PlayBox {
+	margin-top: -58px;
+}
+
+.PlayBox h2 {
+	/* Live Blueskonzert: */
+	font-family: Interstate-Bold;
+	font-size: 32px;
+	color: #FFFFFF;
+	text-shadow: 1px 2px 4px rgba(0,0,0,0.87);
+}
+
+.PlayBox .moreInfo {
+	/* LIVE ON AIR with rad: */
+	font-family: InterstateBoldCondensed;
+	font-size: 18px;
+	color: #FFFFFF;
+	display: block;
+	width: 100%;
+}
+
+.PlayBox span {
+	text-transform: uppercase;
+}
+
+.liveInfo {
+	
+}
+
+.PlayBox button {
+	/* Oval 2: */
+	background: #60C300;
+	border-radius: 50%;
+	border: 0;
+	width: 116px;
+	height: 116px;
+	margin-right: 15px;
+}

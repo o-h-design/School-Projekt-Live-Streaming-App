@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+	<link rel="stylesheet" type="text/css" href="CSS/css/bootstrap.css"/>
+
+
+<script type="text/javascript">
+		var elem = document.querySelector('.grid');
+		var msnry = new Masonry( elem, {
+		  // options
+		  itemSelector: '.grid-item',
+		  columnWidth: 200
+		});
+
+		// element argument can be a selector string
+		//   for an individual element
+		var msnry = new Masonry( '.grid', {
+		  // options
+		  itemSelector: '.grid-item',
+          columnWidth: '.grid-item',
+          isFitWidth: true
+		});
+
+		(function loop() {
+		    var rand = Math.round(Math.random() * (3000 - 500)) + 500;
+		    setTimeout(function() {
+		            showDiv();
+		            loop();  
+		    }, rand);
+		}());
+
+		//$('.grid-item').show( "drop", {direction: "down"}, 800 );
+	     	//$( "grid-item" ).each( function(){
+    //console.log(123 );
+
+
+    $(".grid-item").each(function() { 
+  				$(this).show( "drop", {direction: "down"}, 800 );
+			});
+	</script>
+
+</head>
+<body>
+
+<nav class="navbar-fixed-top headerTop">	
+	<img src="Pictures/top.png">	
+</nav>
+
+<section class="scrollThing">
+	<img src="Pictures/test-bg.png">
+	<img src="Pictures/test-bg.png">
+	<img src="Pictures/test-bg.png">
+	<img src="Pictures/test-bg.png">	
+</section>
+
+<footer class="navbar-fixed-bottom footerBot">
+	<img src="Pictures/bottom.png">	
+</footer>
+
+</body>
+</html>
+
