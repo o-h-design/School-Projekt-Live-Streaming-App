@@ -34,3 +34,10 @@ config.codekit
 ### CodeKit Patch ###
 */codekit-config.json
 .codekit-cache
+
+
+### Dropbox ###
+# Dropbox settings and caches
+.dropbox
+.dropbox.attr
+.dropbox.cache
