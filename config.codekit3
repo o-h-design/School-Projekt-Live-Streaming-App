@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25444",
 "files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/CSS\/css\/bootstrap-theme.css": {
 		"aP": 0,
 		"bl": 0,
@@ -545,7 +551,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 500571897,
-	"displayValue": "Prototype",
+	"displayValue": "School-Projekt-Live-Streaming-App",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-kanye"
 	},
